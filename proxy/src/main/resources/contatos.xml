@@ -1,0 +1,10 @@
+<contatos>
+    <contato>
+        <nome>Pedro Silva</nome>
+        <email>pedro@gmail.com</email>
+    </contato>
+    <contato>
+        <nome>Carlos Silva</nome>
+        <email>carlos@gmail.com</email>
+    </contato>
+</contatos>

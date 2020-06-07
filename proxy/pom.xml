@@ -9,27 +9,24 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-<!--    <groupId>com.factorymethod</groupId>-->
-    <artifactId>factory-method</artifactId>
+    <artifactId>proxy</artifactId>
     <version>1.0.0</version>
 
     <dependencies>
-        <dependency>
-            <groupId>com.designpatterns</groupId>
-            <artifactId>factory-method-lib</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.thoughtworks.xstream</groupId>
             <artifactId>xstream</artifactId>
             <version>1.4.7</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
-            <groupId>net.sf.opencsv</groupId>
-            <artifactId>opencsv</artifactId>
-            <version>2.3</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+            <scope>test</scope>
         </dependency>
+
     </dependencies>
 
 
