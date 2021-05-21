@@ -1,8 +1,8 @@
-package com.factorymethod.component;
+package com.factorymethod.component.impl;
 
-import com.factorymethod.service.ContatosXML;
-import com.factorymethodlib.commons.MalaDireta;
-import com.factorymethodlib.service.Contatos;
+import com.factorymethod.component.MalaDireta;
+import com.factorymethod.service.Contatos;
+import com.factorymethod.service.impl.ContatosXML;
 
 /**
  * @author Elvis Fernandes on 03/06/2020

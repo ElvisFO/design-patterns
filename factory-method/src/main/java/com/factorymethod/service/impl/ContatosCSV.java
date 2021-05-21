@@ -1,8 +1,8 @@
-package com.factorymethod.service;
+package com.factorymethod.service.impl;
 
 import au.com.bytecode.opencsv.CSVReader;
-import com.factorymethodlib.model.Contato;
-import com.factorymethodlib.service.Contatos;
+import com.factorymethod.model.Contato;
+import com.factorymethod.service.Contatos;
 
 import java.io.File;
 import java.io.FileReader;
@@ -23,7 +23,6 @@ public class ContatosCSV implements Contatos {
         this.nomeArquivo = nomeArquivo;
     }
 
-
     @Override
     public List<Contato> todos() {
 
@@ -42,7 +41,6 @@ public class ContatosCSV implements Contatos {
             }
 
         } catch (Exception e) {
-
             throw new RuntimeException("Erro ao ler arquivo: " + nomeArquivo);
         } finally {
             try {

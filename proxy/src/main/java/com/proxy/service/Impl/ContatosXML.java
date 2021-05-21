@@ -3,11 +3,11 @@ package com.proxy.service.Impl;
 import com.proxy.model.Contato;
 import com.proxy.service.Contatos;
 import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.security.NoTypePermission;
+import com.thoughtworks.xstream.security.NullPermission;
+import com.thoughtworks.xstream.security.PrimitiveTypePermission;
 
-import java.util.ConcurrentModificationException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author Elvis Fernandes on 06/06/2020
@@ -20,6 +20,13 @@ public class ContatosXML implements Contatos {
     public ContatosXML(String... nomesArquivos) {
 
         XStream xStream = new XStream();
+        // clear out existing permissions and set own ones
+        xStream.addPermission(NoTypePermission.NONE);
+        // allow some basics
+        xStream.addPermission(NullPermission.NULL);
+        xStream.addPermission(PrimitiveTypePermission.PRIMITIVES);
+        xStream.allowTypeHierarchy(Collection.class);
+        xStream.allowTypesByWildcard(new String[] {"com.proxy.**", "com.factorymethodlib.**"});
         xStream.alias("contatos", List.class);
         xStream.alias("contato", Contato.class);
 

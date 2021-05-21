@@ -1,6 +1,6 @@
-package com.factorymethodlib.service;
+package com.factorymethod.service;
 
-import com.factorymethodlib.model.Contato;
+import com.factorymethod.model.Contato;
 
 import java.util.List;
 

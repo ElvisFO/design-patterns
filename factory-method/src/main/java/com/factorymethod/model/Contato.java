@@ -1,4 +1,4 @@
-package com.factorymethodlib.model;
+package com.factorymethod.model;
 
 /**
  * @author Elvis Fernandes on 03/06/2020

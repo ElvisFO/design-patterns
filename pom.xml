@@ -10,7 +10,6 @@
     <version>1.0.0</version>
     <modules>
         <module>factory-method</module>
-        <module>factory-method-lib</module>
         <module>proxy</module>
     </modules>
 
@@ -41,6 +40,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
