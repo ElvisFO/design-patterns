@@ -9,23 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-<!--    <groupId>com.factorymethod</groupId>-->
-    <artifactId>factory-method</artifactId>
-    <version>1.0.0</version>
+    <artifactId>observer</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>com.thoughtworks.xstream</groupId>
-            <artifactId>xstream</artifactId>
-            <version>1.4.17</version>
-        </dependency>
-
-        <dependency>
-            <groupId>net.sf.opencsv</groupId>
-            <artifactId>opencsv</artifactId>
-            <version>2.3</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
@@ -34,6 +20,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
 
 </project>
